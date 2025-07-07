@@ -18,20 +18,20 @@ function NavBar() {
         <>
             <header>
                 <nav className='text-black flex justify-between px-5 md:px-10 lg:px-16 py-8 xl:px-20'>
-                    <GiHamburgerMenu className='absolute top-8 right-5 text-3xl' />
+                    <GiHamburgerMenu className='absolute top-8 right-5 text-3xl md:hidden' />
                     <div className="logo text-2xl">
                         <p>Hotel<span className='text-[#3252DF]'>Reserve</span></p>
                     </div>
-                    <div className="">
+                    <div className="flex flex-col md:flex-row gap-8">
                         <ul className=' hidden md:flex justify-between gap-4'>
                             {items.map((item, index) => (
-                                <li key={index}>
+                                <li key={index} className='text-2xl'>
                                     <a to={item.url}>{item.text}</a>
                                 </li>
                             ))}
                         </ul>
                         <div className='hidden md:flex justify-center items-center'>
-                            <button className='bg-[#3252DF] text-white rounded-xl w-full mr-0 h-12 md:w-36 md:h-12 md:mr-8'>Search</button>
+                            <button className='bg-[#3252DF] text-white rounded-xl w-full mr-0 h-12 md:w-24 md:h-10 md:mr-8'>login</button>
                         </div>
                     </div>
 
