@@ -76,7 +76,7 @@ function Home() {
         </section>
         
         <section className='px-5 md:px-10 lg:px-16 xl:px-20 my-12 '>
-          <div className="grid grid-cols-1 gap-4 cursor-pointer bg-[#EAF1FF] p-6 md:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 cursor-pointer bg-[#EAF1FF] p-6 md:grid-cols-2 justify-center lg:grid-cols-4">
             <div className='bg-white rounded-xl w-full h-16 md:w-48 md:h-16 flex justify-center items-center gap-3'>
               <img src={Calendar} alt="" />
               <button>Check available</button>
@@ -94,8 +94,8 @@ function Home() {
               <img src={Location2} alt="" />
               <button>Select location</button>
             </div>
-            <div className='flex justify-center items-center'>
-              <button className='bg-[#3252DF] text-white rounded-xl w-full mr-0 h-12 md:w-36 md:h-12 md:mr-8'>Search</button>
+            <div className='flex lg:justify-center items-center'>
+              <button className='bg-[#3252DF] text-white rounded-xl w-full mr-0 h-12 md:w-48 md:h-16 md:mr-0 lg:w-36 lg:h-12 lg:mr-8'>Search</button>
             </div>
           </div>
         </section>

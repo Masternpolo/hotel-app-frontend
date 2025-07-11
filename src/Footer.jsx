@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 function Footer() {
     return (
@@ -16,7 +17,7 @@ function Footer() {
                         </div>
                         <div className='flex flex-col gap-2 mt-10'>
                             <h2 className='text-x1 font-medium'>Become hotel Owner</h2>
-                            <button className='bg-[#3252DF] text-white rounded-xl w-30 mr-0 h-12 md:w-36 md:h-12 md:mr-8'>Register</button>
+                            <Link to={'/register'} className='bg-[#3252DF] text-white text-center pt-2 rounded-xl w-30 mr-0 h-12 md:w-36 md:h-12 md:mr-8'>Register</Link>
                         </div>
                     </div>
                 </section>

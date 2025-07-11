@@ -1,4 +1,16 @@
 @import "tailwindcss";
+
 @theme {
   --color-light-blue: #243c5a; 
+}
+
+input {
+  border: 1px solid gray !important;
+  border-radius: 2px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
 }

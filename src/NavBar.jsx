@@ -26,12 +26,12 @@ function NavBar() {
                         <ul className=' hidden md:flex justify-between gap-4'>
                             {items.map((item, index) => (
                                 <li key={index} className='text-2xl'>
-                                    <a to={item.url}>{item.text}</a>
+                                    <Link to={item.url}>{item.text}</Link>
                                 </li>
                             ))}
                         </ul>
                         <div className='hidden md:flex justify-center items-center'>
-                            <button className='bg-[#3252DF] text-white rounded-xl w-full mr-0 h-12 md:w-24 md:h-10 md:mr-8'>login</button>
+                            <Link to={'/login'} className='bg-[#3252DF] text-white text-center pt-1.5 rounded-xl w-full mr-0 h-12 md:w-24 md:h-10 md:mr-8'>login</Link>
                         </div>
                     </div>
 
