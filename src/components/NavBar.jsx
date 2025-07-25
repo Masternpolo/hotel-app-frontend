@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
+import Footer from './Footer';
 
 
 const items = [
@@ -34,9 +35,10 @@ function NavBar() {
                             <Link to={'/login'} className='bg-[#3252DF] text-white text-center pt-1.5 rounded-xl w-full mr-0 h-12 md:w-24 md:h-10 md:mr-8'>login</Link>
                         </div>
                     </div>
-
                 </nav>
+                    <Outlet />
             </header>
+            <Footer />
         </>
     )
 }
