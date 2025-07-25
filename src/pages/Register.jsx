@@ -11,38 +11,38 @@ function Register() {
               <img src={Registerp} alt="" className='hidden md:block md:object-fill h-screen w-full' />
             </div>
             <div className='max-h-screen'>
-              <h2 className='py-2 text-center text-2xl mt-8'>Create Account</h2>
-              <form className='flex flex-col items-center items-center gap-2.5 px-6 md:px-10 lg:items-center lg:px-12'>
+              <h2 className='py-2 text-center text-2xl mt-4'>Create Account</h2>
+              <form className='flex flex-col items-center gap-5 px-6 md:gap-2.5 md:px-10 lg:items-center lg:px-12'>
                 <label htmlFor="name">
                   Name
-                  <input type="text" name='name' id='name' placeholder='Enter your name' className='p-2 w-[20rem] h-8 lg:w-[30rem] lg:h-10' />
+                  <input type="text" name='name' id='name' placeholder='Enter your name' className='p-2 w-[18rem] h-8 lg:w-[30rem] lg:h-10' />
                 </label>
                 <label htmlFor="email">
                   Email
-                  <input type="email" name='email' id='email' placeholder='name@gmail.com' className='p-2 w-[20rem] h-8 lg:w-[30rem] lg:h-10' />
+                  <input type="email" name='email' id='email' placeholder='name@gmail.com' className='p-2 w-[18rem] h-8 lg:w-[30rem] lg:h-10' />
                 </label>
                 <label htmlFor="number">
                   Phone no
-                  <input type="tel" name='number' id='number' placeholder='With country code' className='p-2 w-[20rem] h-8 lg:w-[30rem] lg:h-10' />
+                  <input type="tel" name='number' id='number' placeholder='With country code' className='p-2 w-[18rem] h-8 lg:w-[30rem] lg:h-10' />
                 </label>
                 <label htmlFor="country">
                   Country
-                  <input type="text" name='country' id='country' placeholder='Country name' className='p-2 w-[20rem] h-8 lg:w-[30rem] lg:h-10' />
+                  <input type="text" name='country' id='country' placeholder='Country name' className='p-2 w-[18rem] h-8 lg:w-[30rem] lg:h-10' />
                 </label>
                 <label htmlFor="username">
                   Username
-                  <input type="text" name='username' id='username' placeholder='Username' className='p-2 w-[20rem] h-8 lg:w-[30rem] lg:h-10' />
+                  <input type="text" name='username' id='username' placeholder='Username' className='p-2 w-[18rem] h-8 lg:w-[30rem] lg:h-10' />
                 </label>
                 <label htmlFor="password">
                   Password
-                  <input type="password" name='password' id='password' placeholder='6+ characters' className='p-2 w-[20rem] h-8 lg:w-[30rem] lg:h-10' />
+                  <input type="password" name='password' id='password' placeholder='6+ characters' className='p-2 w-[18rem] h-8 lg:w-[30rem] lg:h-10' />
                 </label>
                 <p className='px-6 md:px-0'>
                   By signing up you agree to <a href={'#'} className='text-blue-500 hover:underline'>terms and condition</a> at HotelReserve
                 </p>
-                <button type="submit" className='bg-[#003DFC] text-white rounded w-[20rem] h-8 lg:w-[30rem] lg:h-10'>Register</button>
+                <button type="submit" className='bg-[#003DFC] text-white rounded w-[18rem] h-8 lg:w-[30rem] lg:h-10'>Register</button>
               </form>
-              <div className='flex justify-center text-center'>
+              <div className='flex justify-center text-center my-2 md:my-0'>
                 <Link to={'/login'} className='pb-4 underline md:p-4'>
                   <p> Already have an account Login </p>
                 </Link>
